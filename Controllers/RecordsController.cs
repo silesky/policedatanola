@@ -9,7 +9,7 @@ namespace police.Controllers
     [HttpGet("")]
     public IActionResult GetAllByMonth()
     {
-      return new ObjectResult(RecordsRepository.getCrimesByMonth()); // objectResult converts the generic to an ienumerable
+      return new ObjectResult(RecordsRepository.GetCrimesByMonth()); // objectResult converts the generic to an ienumerable
     }
   }
 }
